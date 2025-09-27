@@ -54,17 +54,17 @@
 ---
 include:
     ### Xiao_Dongle START ###
-  - board: seeeduino_xiao_ble
-    shield: corne_dongle_xiao
+    #- board: seeeduino_xiao_ble
+    #shield: corne_dongle_xiao
     #  -DCONFIG_ZMK_USB=y  -DCONFIG_ZMK_BLE=y
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle\" -DCONFIG_ZMK_STUDIO=y
-    artifact-name: xiao_corne_dongle
-    snippet: studio-rpc-usb-uart
+    #cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle\" -DCONFIG_ZMK_STUDIO=y
+    #artifact-name: xiao_corne_dongle
+    #snippet: studio-rpc-usb-uart
     # snippet: zmk-usb-logging
     ### Xiao_Dongle END ###
 
     ### PCA10059 Dongle START ###
-  - board: pca10059
+    - board: nrf52840dongle_nrf52840
     shield: corne_dongle_pca10059
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="PCA10059_Dongle" -DCONFIG_ZMK_STUDIO=y
     artifact-name: pca10059_corne_dongle
