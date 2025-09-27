@@ -26,8 +26,8 @@ jobs:
           echo "BUILD_DIR=$(mktemp -d)" >> $GITHUB_ENV
 
       - name: West Init
-        working-directory: ${{ github.workspace }}
-        run: west init -l .
+        working-directory: ${{ env.base_dir }}
+        run: west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
 
       - name: West Update
         working-directory: ${{ github.workspace }}
