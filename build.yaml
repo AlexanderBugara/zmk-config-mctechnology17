@@ -64,7 +64,7 @@ include:
     ### Xiao_Dongle END ###
 
     ### PCA10059 Dongle START ###
-  - board: nrf52840dongle_nrf52840
+    board: pca10059
     shield: corne_dongle_pca10059
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="PCA10059_Dongle" -DCONFIG_ZMK_STUDIO=y
     artifact-name: pca10059_corne_dongle
