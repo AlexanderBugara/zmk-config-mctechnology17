@@ -4,32 +4,15 @@ on:
   push:
     branches:
       - develop
-            inputs:
-              build_matrix_path:
-                description: "Path to the build matrix file"
-                default: "build.yaml"
-                required: false
-                type: string
-              config_path:
-                description: "Path to the config directory"
-                default: "config"
-                required: false
-                type: string
-              fallback_binary:
-                description: "Fallback binary format, if no *.uf2 file was built"
-                default: "bin"
-                required: false
-                type: string
-              archive_name:
-                description: "Archive output file name"
-                default: "firmware"
-                required: false
-                type: string
-  workflow_dispatch:
+  workflow_dispatch:  # optional manual trigger
 
-name: Reusable user config build
+name: Build PCA10059 Dongle
 
-
+env:  # use environment variables instead of inputs
+  BUILD_MATRIX_PATH: "build.yaml"
+  CONFIG_PATH: "config"
+  FALLBACK_BINARY: "bin"
+  ARCHIVE_NAME: "firmware"
     
 jobs:
   matrix:
