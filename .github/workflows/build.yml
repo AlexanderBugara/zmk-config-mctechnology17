@@ -26,6 +26,7 @@ jobs:
           echo "BUILD_DIR=$(mktemp -d)" >> $GITHUB_ENV
 
       - name: West Init
+        ls
         working-directory: ${{ env.base_dir }}
         run: west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
 
