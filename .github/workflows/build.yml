@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "Listing files in working directory"
           /bin/ls -la
-          west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
+          west init -l "/config"
 
       - name: West Update
         working-directory: ${{ github.workspace }}
