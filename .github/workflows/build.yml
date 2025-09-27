@@ -2,5 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: ../build.yml
+    uses: AlexanderBugara/zmk/.github/workflows/build-user-config.yml@main
 
