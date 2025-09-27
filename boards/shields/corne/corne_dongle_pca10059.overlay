@@ -1,11 +1,17 @@
-/* corne_dongle_pca10059.overlay */
+/* PCA10059 Corne Dongle overlay */
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/foostan/corne/5column.dtsi>
+#include <layouts/foostan/corne/6column.dtsi>
 
 chosen {
     zephyr,console = &uart0;
     zephyr,shell-uart = &uart0;
 };
 
-zmk,physical-layout {
-    compatible = "zmk,physical-layout";
-    label = "foostan_corne_6col_layout";
+&foostan_corne_6col_layout {
+    transform = <&default_transform>;
+};
+
+&foostan_corne_5col_layout {
+    transform = <&five_column_transform>;
 };
