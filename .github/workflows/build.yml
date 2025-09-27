@@ -3,7 +3,7 @@ name: Build PCA10059 Dongle for Corne Keyboard
 on:
   push:
     branches:
-      - main
+      - develop
   workflow_dispatch:
 
 jobs:
