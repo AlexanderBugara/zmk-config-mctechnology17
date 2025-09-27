@@ -1,37 +1,13 @@
-/*
- * Corne Dongle shield for Nordic PCA10059 (nRF52840 dongle)
- * Derived from corne_dongle_xiao but adapted for PCA10059
- */
-
 chosen {
     zephyr,console = &uart0;
     zephyr,shell-uart = &uart0;
 };
 
-/* USB */
 &usb0 {
     status = "okay";
 };
 
-/* Optional: LEDs */
-leds {
-    compatible = "gpio-leds";
-    led0: led_0 {
-        gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-        label = "LED0";
-    };
-    /* Add more LEDs if needed */
-};
-
-/* Key scanning */
-&keyscan0 {
-    status = "okay";
-};
-
-/* Physical layout (example for Corne 6x3) */
 zmk,physical-layout {
     compatible = "zmk,physical-layout";
     label = "foostan_corne_6col_layout";
 };
-
-
