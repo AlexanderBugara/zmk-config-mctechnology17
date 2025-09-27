@@ -28,8 +28,9 @@ jobs:
       - name: West Init and List Directory
         working-directory: ${{ env.base_dir }}
         run: |
-        ls -la
-        west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
+          echo "Listing files in working directory"
+          /bin/ls -la
+          west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
 
       - name: West Update
         working-directory: ${{ github.workspace }}
