@@ -53,11 +53,11 @@
 # cmake-args: -DKEYMAP_FILE=../../config/other-corne.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"other-corne\" -DEXTRA_CONF_FILE=../../config/other-corne.conf
 ---
 include:
-     ### PCA10059 Dongle START ###
+      ### PCA10059 Dongle START ###
     - board: nrf52840dongle_nrf52840
-    shield: corne_dongle_pca10059
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="PCA10059_Dongle" -DCONFIG_ZMK_STUDIO=y
-    artifact-name: pca10059_corne_dongle
-    snippet: studio-rpc-usb-uart
-    ### PCA10059 Dongle END ###    
+      shield: corne_dongle_pca10059
+      cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="PCA10059_Dongle" -DCONFIG_ZMK_STUDIO=y
+      artifact-name: pca10059_corne_dongle
+      snippet: studio-rpc-usb-uart
+      ### PCA10059 Dongle END ###    
  
