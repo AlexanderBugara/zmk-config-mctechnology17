@@ -5,9 +5,7 @@ on:
     branches:
       - develop
   workflow_dispatch:  # optional manual trigger
-
-name: Build PCA10059 Dongle
-
+  
 env:  # use environment variables instead of inputs
   BUILD_MATRIX_PATH: "build.yaml"
   CONFIG_PATH: "config"
