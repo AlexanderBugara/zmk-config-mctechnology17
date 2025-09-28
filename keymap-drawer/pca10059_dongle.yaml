@@ -1,0 +1,3 @@
+layout: {zmk_keyboard: pca10059_dongle}
+layers:
+  base: [A, B, C, D, E]

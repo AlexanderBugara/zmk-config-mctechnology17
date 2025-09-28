@@ -1,52 +1,52 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
-  - ↹
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  default: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, ⏎, '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', lower, ␣, ␣, raise, '$$mdi:apple-keyboard-option$$']
+  lower:
+  - Esc
+  - ''
   - '7'
   - '8'
   - '9'
-  - '0'
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  - PAGE UP
+  - Gui+Sft+J
+  - Tab Left
+  - Tab Right
+  - ''
+  - ''
+  - DELETE
+  - $$mdi:apple-keyboard-control$$
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - PAGE DOWN
   - ←
   - ↓
   - ↑
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - ␣
+  - ''
   - ⏎
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - Vol Down
+  - Vol Up
+  - ''
+  - ''
+  - ''
+  - Gui+Shift
+  - $$mdi:apple-keyboard-command$$
+  - {t: lower, type: held}
+  - ␣
+  - Gui+Alt+␣
+  - raise
   - $$mdi:apple-keyboard-option$$
-  RAI:
-  - ↹
+  raise:
+  - '`'
   - '!'
   - '@'
   - '#'
@@ -54,37 +54,37 @@ layers:
   - '%'
   - ^
   - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
+  - '*'
   - +
+  - '='
+  - '-'
+  - $$mdi:apple-keyboard-control$$
+  - ''
   - '{'
+  - (
+  - '['
+  - ''''
+  - '"'
+  - ']'
+  - )
   - '}'
-  - '|'
-  - '~'
-  - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
+  - \
   - ⏎
-  - {t: '&studio_unlock', type: held}
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - _
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
+  - lower
+  - Ctl+␣
+  - ␣
+  - {t: raise, type: held}
   - $$mdi:apple-keyboard-option$$
